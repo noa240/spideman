@@ -1,0 +1,64 @@
+#box{
+    height: 90vh;
+    width:30vw;
+    animation: display-img 15s  infinite;
+    background-size: 100% 100%;
+
+
+}
+#container{
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+}
+#boxtwo{
+    height: 90vh;
+    width: 30vw;
+    animation:boxone 10s infinite ;
+}
+
+#boxthree{
+    height: 90vh;
+    width: 30vw;
+    animation:boxtwo 10s infinite ;
+}
+#boxfour{
+    height: 90vh;
+    width: 30vw;
+    animation:boxthree 10s infinite ;
+}
+@keyframes display-img{
+    0% {background-image:url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp);}
+    10% {background-image: url(1498488509-the-amazing-spider-man-2012.jpg);}
+    20%{background-image: url(evilspiderman.jpg);}
+    30%{background-image:url(spiderman.jpg);}
+    40%{background-image:url(spiderverse.jpg);}
+    50%{background-image: url(הורדה.jpg);}
+    60%{background-image: url(הורדה\ \(1\).jpg);}
+    70%{background-image: url(הורדה\ \(2\).jpg);}
+    80%{background-image: url(הורדה\ \(3\).jpg);}
+    90%{background-image: url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp);}
+    100%{background-image: url(1498488509-the-amazing-spider-man-2012.jpg);}
+
+}
+
+@keyframes boxone{
+    0% {background-image:url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp) ;}
+    33%{background-image:url(1498488509-the-amazing-spider-man-2012.jpg);}
+    66%{background-image:url(evilspiderman.jpg);}
+    100%{background-image:url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp) ;}
+
+} 
+@keyframes boxtwo {
+    0%{background-image: url(spiderman.jpg);}
+    33%{background-image: url(spiderverse.jpg);}
+    66%{background-image: url(הורדה.jpg);}
+    100%{background-image: url(spiderman.jpg);}
+    
+} 
+@keyframes boxthree {
+    0%{background-image: url(הורדה\ \(1\).jpg);}
+    33%{background-image: url(הורדה\ \(2\).jpg);}
+    66%{background-image: url(הורדה\ \(3\).jpg);} 
+    100%{background-image: url(הורדה\ \(1\).jpg);} 
+}

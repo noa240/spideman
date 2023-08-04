@@ -1,0 +1,25 @@
+#box{
+    height: 50vh;
+    width: 50vw;
+
+}
+#box:hover{
+    animation-name: display-img;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes display-img{
+    0% {background-image:url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp);}
+    10% {background-image: url(1498488509-the-amazing-spider-man-2012.jpg);}
+    20%{background-image: url(evilspiderman.jpg);}
+    30%{background-image:url(spiderman.jpg);}
+    40%{background-image:url(spiderverse.jpg);}
+    50%{background-image: url(הורדה.jpg);}
+    60%{background-image: url(הורדה\ \(1\).jpg);}
+    70%{background-image: url(הורדה\ \(2\).jpg);}
+    80%{background-image: url(הורדה\ \(3\).jpg);}
+    90%{background-image: url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp);}
+    100%{background-image: url(1498488509-the-amazing-spider-man-2012.jpg);}
+
+}
