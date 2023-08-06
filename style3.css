@@ -1,6 +1,7 @@
 #box{
     height: 50vh;
     width: 50vw;
+    background-image: url(1498488509-the-amazing-spider-man-2012.jpg);
 
 }
 #box:hover{
@@ -8,7 +9,7 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     cursor: pointer;
-}
+    }
 @keyframes display-img{
     0% {background-image:url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp);}
     10% {background-image: url(1498488509-the-amazing-spider-man-2012.jpg);}
