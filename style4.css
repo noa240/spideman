@@ -1,56 +1,48 @@
-#box{
-    width: 30vw;
-    height: 60vh;
-    border: black solid 2px;
-    background-image: url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp);
-    z-index: -1;
-    position: absolute;
-}
-#container{
-    position: absolute;
-}
-#left{
-    width: 30vw;
-    height: 60vh;
-    z-index: 0;
-    position: absolute;
-
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 300px; 
+    height: 200px;
 }
 
-#right{
-    width: 30vw;
-    height: 60vh;
-    z-index: 1;
-    position: absolute;
-
-
+.slider {
+    display: flex;
+    transition: transform 0.3s ease;
 }
-#left:hover{
-    animation-name: display-img;
-    animation-duration: 20s;
-    animation-direction: reverse;
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
-
-}
-#right:hover{
-    animation-name: display-img;
-    animation-duration: 20s;
-    animation-direction: normal;
-    cursor: pointer;
-
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
 }
 
-@keyframes display-img{
-    0% {background-image:url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp);}
-    10% {background-image: url(1498488509-the-amazing-spider-man-2012.jpg);}
-    20%{background-image: url(evilspiderman.jpg);}
-    30%{background-image:url(spiderman.jpg);}
-    40%{background-image:url(spiderverse.jpg);}
-    50%{background-image: url(הורדה.jpg);}
-    60%{background-image: url(הורדה\ \(1\).jpg);}
-    70%{background-image: url(הורדה\ \(2\).jpg);}
-    80%{background-image: url(הורדה\ \(3\).jpg);}
-    90%{background-image: url(Andrew-Garfield-Tom-Holland-Tobey-Maguire-Spiderman-No-Way-Home-2021-Far-Out-Magazine.webp);}
-    100%{background-image: url(1498488509-the-amazing-spider-man-2012.jpg);}
+.left-arrow {
+    left: 0;
+}
 
+.right-arrow {
+    right: 0;
+}
+
+.slider-container:hover .slider {
+    transform: translateX(-100%);
+}
+
+.left-arrow:hover ~ .slider {
+    transform: translateX(0);
+}
+
+.right-arrow:hover ~ .slider {
+    transform: translateX(-200%);
 }
